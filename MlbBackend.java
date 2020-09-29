@@ -167,5 +167,17 @@ public class MlbBackend {
     }
     throw new NoSuchElementException("Could not find Jersey Number!");
   }
-
-}
+  
+  public boolean containsKey(String firstName) {
+    int index = Math.abs(firstName.hashCode()) % 100;
+    LinkedList<MlbData> linkedList = mlbPlayers[index];
+    if (linkedList == null) {
+      return false;
+    }
+    for (int x = 0; x < linkedList.size(); x++) {
+      if (linkedList.get(x).getFirstName().equals(firstName)) {
+        return true;
+      }
+    }
+    return false;
+  }
