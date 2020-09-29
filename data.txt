@@ -1,0 +1,50 @@
+Luke ,Voit      ,New York Yankees       ,59     ,1B	,20
+Jose ,Abreu	,Chicago White Sox	,79	,1B	,17
+Nelson ,Cruz	,Minnesota Twins	,23	,DH	,16
+Mike ,Trout	,Los Angeles Angles	,27	,CF	,16
+Adam ,Duvall	,Atlanta Braves		,23	,LF	,15
+Mookie ,Betts	,Los Angeles Dodgers	,50	,RF	,15
+Fernando ,Tatis  ,San Diego Padres	,23	,SS	,15
+Manny ,Machado   ,San Diego Padres	,13     ,3B	,14
+Marcell ,Ozuna	,Atlanta Braves		,20	,LF	,14
+Teoscar ,Hernandez ,Toronto Blue Jays	,37	,LF	,14
+Wil ,Myers	,San Diego Padres	,4	,CF	,13
+Eugenio ,Suarez	,Cincinnati Reds	,7	,3B	,13
+Corey ,Seager ,Los Angeles Dodgers	,5	,SS	,13
+Matt ,Olson	,Oakland Athletics	,28	,1B	,13
+Jose ,Ramirez	,Cleveland Indians	,11	,3B	,13
+Eloy ,Jimenez 	,Chicago White Sox	,74	,LF	,13
+Keston ,Hiura	,Milwaukee Brewers	,18	,2B	,13
+Brandon ,Lowe	,Tampa Bay Rays		,8 	,2B	,13
+Nick ,Castellanos ,Cincinnati Reds	,2      ,RF	,12
+Miguel ,Sano 	,Minnesota Twins	,22	,1B     ,12
+Kole ,Calhoun 	,Arizona Diamondbacks	,56	,RF	,12
+Byron ,Buxton	,Minnesota Twins	,25	,CF 	,12
+Ian ,Happ	,Chicago Cubs		,8	,CF	,12
+Pete ,Alonso	,New York Mets		,20     ,1B	,12
+Freddie ,Freeman ,Atlanta Braves	,5	,1B	,11
+AJ ,Pollock	,Los Angeles Dodgers	,11	,LF	,11
+Eddie ,Rosario	,Minnesota Twins	,20	,RF	,11
+Trevor ,Story 	,Colorado Rockies	,27	,SS	,11
+JT ,Realmuto	,Philadelphia Phillies 	,10 	,C	,11
+Renato ,Nunez	,Baltimore Orioles	,39	,1B	,11 
+Rafael ,Devers 	,Boston Red Sox		,11	,3B	,11
+Anthony ,Santander ,Baltimore Orioles	,25	,RF	,11
+Ronald ,Acuna	,Atlanta Braves		,13	,CF	,11
+Juan ,Soto	,Washington Nationals	,22	,LF	,11
+Luis ,Robert	,Chicago White Sox	,88	,CF	,11
+DJ ,LeMahieu	,New York Yankees	,26	,2B	,10
+Bryce ,Harper 	,Philadelphia Phillies	,3	,RF	,10
+Christian ,Yelich ,Milwaukee Brewers	,22	,RF 	,10
+Xander ,Bogaerts ,Boston Red Sox	,2	,SS	,10
+George ,Springer ,Houston Astros	,4	,CF	,10
+Jesse ,Winker	,Cincinnati Reds	,33	,LF	,10
+Max ,Muncy	,Los Angeles Dodgers	,13	,2B     ,10
+Kyle ,Schwarber	,Chicago Cubs		,12	,LF	,10
+Matt ,Chapman	,Oakland Athletics	,26     ,3B	,10
+Cody ,Bellinger	,Los Angeles Dodgers	,35	,CF	,10
+Rhys ,Hoskins 	,Philadelphia Phillies	,17	,1B	,10
+Lourdes ,Gurriel ,Toronto Blue Jays	,13	,LF	,10
+Kyle ,Lewis 	,Seattle Mariners 	,1	,RF	,10
+Edwin ,Encarnacion ,Chicago White Sox	,23     ,DH	,9
+Joey ,Votto	,Cincinnati Reds	,19	,1B	,9
