@@ -37,7 +37,7 @@ public class inputdataset {
   }
   
   
-  public void addPlayer(Scanner myReader) {
+  public void addData(Scanner myReader) {
     String firstName = myReader.next();
     
     String lastName = myReader.next();
