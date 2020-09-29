@@ -1,0 +1,23 @@
+ImportPlayers pseudocode:
+
+private field of HashTableMap of <String, ArrayList<String>>
+
+constructor:
+construct a HashTableMap of size 100 and place in that private field
+
+as before, use try-catch with scanner to get the player data
+
+addPlayer method:
+grab info as before, then:
+construct a new ArrayList of Strings
+
+Then, add the following to that ArrayList, one at a time:
+add the teamName
+add the number.toString
+add the position
+add the homeRuns.toString
+
+
+fullName equals firstName + " " + lastName. Don't store the fullName in the ArrayList.
+
+playerDatabase.put(fullName, the ArrayList of Strings)
