@@ -18,6 +18,11 @@ public class MLBDriver extends ImportPlayers {
     String str = sc.nextLine();
     String firstName = "";
     String lastName = "";
+    
+    String[] playerName = str.trim().split(" ");
+    firstName = playerName[0];
+    lastName = playerName[1];
+    
     if (str.trim().contains(" ")) {
       boolean val = true;
       while (val) {
@@ -37,9 +42,6 @@ public class MLBDriver extends ImportPlayers {
         val = false;
       }
 
-      String[] playerName = str.trim().split("\\s+");
-      firstName = playerName[0];
-      lastName = playerName[1];
       do {
         System.out
             .println("****    CHOOSE FROM THE OPTIONS BELOW:                                ****");
