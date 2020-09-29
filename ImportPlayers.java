@@ -54,11 +54,10 @@ public class ImportPlayers {
 		mlbPlayers[hash] = list;
 		
 		size++;
-		
 	
 	}
 	
 	public int size() {
-		return size();
+		return size;
 	}
 }
