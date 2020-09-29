@@ -38,21 +38,21 @@ public class inputdataset {
   
   
   public void addData(Scanner myReader) {
-    String firstName = myReader.next();
+    String firstName = data.next();
     
-    String lastName = myReader.next();
+    String lastName = data.next();
 
-    String teamName = myReader.next() + " " + myReader.next();
+    String teamName = data.next() + " " + data.next();
     
-    if (!myReader.hasNextInt()) {
-      teamName = teamName + " " + myReader.next();
+    if (!data.hasNextInt()) {
+      teamName = teamName + " " + data.next();
     }
 
-    int num = myReader.nextInt();
+    int num = data.nextInt();
     
-    String pos = myReader.next();
+    String pos = data.next();
     
-    int homeRuns = myReader.nextInt();
+    int homeRuns = data.nextInt();
     
     LinkedList list = new LinkedList();
     int hashCode = arrayIndex(lastName);
