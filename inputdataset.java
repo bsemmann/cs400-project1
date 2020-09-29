@@ -30,8 +30,8 @@ public class inputdataset {
     }
   
   private int arrayIndex(String key) {
-    int hashCode = Math.abs(key.hashCode());
-    hashCode = hashCode % 100;
+    int hash = Math.abs(key.hashCode());
+    hashCode = hash % 100;
 
     return hashCode;
   }
