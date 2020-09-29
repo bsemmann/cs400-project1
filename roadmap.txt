@@ -1,0 +1,15 @@
+Roadmap to integrating HashTableMap.java:
+
+So for the assignment last week we submitted a HashTableMap.java. You also likely made a Pair or Node object class to store the key and value.
+If possible, we want to be using those classes in our project. So this requires storing a player's data in that Pair/Node object's value field.
+One possible way would be to create an ArrayList of objects, and each index of the ArrayList corresponds to a player attribute. (Or it could
+also be an ArrayList of Strings and you convert all of the numerical data into Strings before inserting). This ArrayList would then be the "value" of your node
+and the player's name would be the "key".
+
+The back end would then manage the database using only HashTableMap methods.
+
+If those who would need to make the changes think you can fix it in time for tonight, that's awesome.
+We could also consider turning the project in on Thursday with our changes and take up to a 15% penalty.
+Or we could leave as is and turn it in this way tonight.
+
+The important thing is that we decide how to proceed quickly, and let everyone else know what you plan to do and why.
