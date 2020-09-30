@@ -1,12 +1,11 @@
 import java.util.Scanner;
 import java.util.NoSuchElementException;
 
-public class MLBDriver extends ImportPlayers {
+public class MLBDriver extends MLBPlayers {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     String choice = "";
-    ImportPlayers importPlayers = new ImportPlayers();
-    MlbBackend player = new MlbBackend();
+    MLBPlayers player = new MLBPlayers();
     System.out
         .println("****    WELCOME TO THE MLB HOMERUN DATABASE!!!                        ****");
     System.out.println("");
@@ -15,31 +14,21 @@ public class MLBDriver extends ImportPlayers {
         .println("****    Enter the player's name whose MLB Stats you want to check!    ****");
     System.out
         .println("****    Enter in the following format: (first name) (last name)       ****");
-    String str = sc.nextLine();
-    String firstName = "";
-    String lastName = "";
-    
-    String[] playerName = str.trim().split(" ");
-    firstName = playerName[0];
-    lastName = playerName[1];
-    
-    if (str.trim().contains(" ")) {
+    String name = sc.nextLine().trim();
+
+    if (name.contains(" ")) {
       boolean val = true;
+      String str = player.getPlayerName();
       while (val) {
-        try {
-          String s = player.getTeamName(firstName, lastName);
-        } catch (NoSuchElementException e) {
-          System.out
-              .println("Player could not be found, please enter name again! (or 'q' to exit)");
-          str = sc.nextLine();
-          if (str.equalsIgnoreCase("q")) {
-            System.out.println(
-                "****    THANK YOU FOR USING OUR MLB DATABASE!!!!                      ****");
+        if (name.equalsIgnoreCase(str)) {
+          val = false;
+        } else {
+          System.out.println("Player does not exist, please try again! (Or 'q' to exit)");
+          String s = sc.nextLine();
+          if (s.equalsIgnoreCase("q"))
             return;
-          }
-          continue;
+          val = true;
         }
-        val = false;
       }
 
       do {
@@ -61,7 +50,7 @@ public class MLBDriver extends ImportPlayers {
             case "1":
               String team = "";
               try {
-                team = player.getTeamName(firstName, lastName);
+                team = player.getTeamName(name);
               } catch (NoSuchElementException e) {
                 System.out.println("Player's Team Name could not be found");
                 break;
@@ -71,7 +60,7 @@ public class MLBDriver extends ImportPlayers {
             case "2":
               int num = 0;
               try {
-                num = player.getPlayerNumber(firstName, lastName);
+                num = player.getPlayerNumber(name);
               } catch (NoSuchElementException e) {
                 System.out.println("Player's Jersey Number could not be found!");
                 break;
@@ -81,7 +70,7 @@ public class MLBDriver extends ImportPlayers {
             case "3":
               String pos = "";
               try {
-                pos = player.getPlayerPos(firstName, lastName);
+                pos = player.getPlayerPosition(name);
               } catch (NoSuchElementException e) {
                 System.out.println("Player's Position could not be fonud!");
                 break;
@@ -91,7 +80,7 @@ public class MLBDriver extends ImportPlayers {
             case "4":
               int runs = 0;
               try {
-                runs = player.getPlayerRun(firstName, lastName);
+                runs = player.getHomeRuns(name);
               } catch (NoSuchElementException e) {
                 System.out.println("Player's Home Runs could not be found!");
                 break;
@@ -112,9 +101,9 @@ public class MLBDriver extends ImportPlayers {
         }
 
       } while (choice != "5");
+
     } else {
-      System.out.println("Wrong Name Format! Please try again!");
+      System.out.println("Wrong format of name entered! Try again.");
     }
-    sc.close();
   }
 }
